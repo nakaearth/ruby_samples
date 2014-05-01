@@ -1,4 +1,3 @@
-
 class Cat
 
   def hello
