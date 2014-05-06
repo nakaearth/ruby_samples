@@ -10,6 +10,7 @@ require 'tiger'
 @tiger = Tiger.new
 @tiger.hello
 Tiger.eat
+@tiger.eat
 
 p Lion.ancestors
 p Tiger.ancestors

@@ -8,6 +8,5 @@ require 'cat'
 
 @dog.hello
 @cat.hello
-
-
+p $FOO_BAR
 p Dog.ancestors #クラスの階層関係を配列にする
