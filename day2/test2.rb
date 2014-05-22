@@ -8,3 +8,7 @@ require 'cat'
 p Hoge
 p Cat::Fuga
 p Cat::Test
+
+p defined? Class.new # <<<  Classクラスにnewメソッドがあるかどうか
+p Class.methods
+
