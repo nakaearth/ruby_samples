@@ -8,14 +8,14 @@ Dog.run
 Dog3.run
 
 
-@dog = Dog.new
-@dog.hello
+dog = Dog.new
+dog.hello
 
 ## 特異メソッドについて
 ## オブジェクトにメソッドを追加できる
-def @dog.hello2(message)
+def dog.hello2(message)
   puts message
 end
 
-@dog.hello2 'test hello!'
+dog.hello2 'test hello!'
 
