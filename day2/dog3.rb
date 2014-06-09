@@ -6,3 +6,12 @@ class Dog3
     end
   end
 end
+
+# # java で書くとすると
+#
+# public class Dog3 {
+#   public static void run() {
+#       System.out.println("this method is class method."); 
+#   }
+# }
+#
