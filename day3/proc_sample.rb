@@ -1,5 +1,11 @@
 $:.unshift(File.dirname(__FILE__))
 
+# blockの例
+(1..5).each do |n|
+  p n
+end
+
+
 def hello_block(&block)
   p '明示的にblockを引数で受け取りcallで実行'
   block.call
