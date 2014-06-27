@@ -44,7 +44,10 @@ lambda.call
 lambda2 = lambda { |val|  p "hello lambda #{val}" }
 lambda2.call('hogehoge')
 # lambda2.call こちら引数valを宣言しているので、セットしないとエラーになる
+# procとの違いは一つ上記のような引数のチェックにある
 
+# lambdaのクラスは??
+p lambda.class
 
 def hello_block4
   if block_given?
