@@ -46,7 +46,6 @@ lambda2.call('hogehoge')
 # lambda2.call こちら引数valを宣言しているので、セットしないとエラーになる
 
 
-x = 1
 def hello_block4
   if block_given?
     yield(8)
@@ -61,5 +60,4 @@ hello_block4 do |n|
   n += 1
   p n
 end
-
 
