@@ -62,3 +62,15 @@ end
 
 # ブロックを渡さない
 block_sample
+
+# キーワード引数
+def hello(message, name: 'testUser', age: 30)
+  puts "#{name}さん#{age}歳、message"
+end
+
+hello('hello!!')
+hello('Hello world', age: 36)
+hello('Hello world', name: 'nakamura')
+hello('Hello world', name: 'nakamura', age: 36)
+hello('Hello world', age: 36, name: 'nakamura')
+
