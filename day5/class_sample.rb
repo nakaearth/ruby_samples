@@ -16,7 +16,7 @@ class Dog2
   end
 end
 
-Dog2.new
+Dog2.new('nakamura')
 
 class Cat
   def initialize(name='ごんた')
@@ -46,6 +46,7 @@ p cat
 str = 'abcd'
 
 puts str.reverse
+puts str
 puts str.reverse!
 puts str
 
@@ -59,18 +60,67 @@ man.age = 30
 puts man.age
 
 class Bird
+  @@test = 'test'
   def self.fly
     puts '飛んでるぞ'
+  end
+
+  def self.get_test
+    @@test
   end
 end
 
 class Bird2
+  @@test = 'test'
   class << self
     def fly
-      puts '飛んでるぞ'
+      puts "飛んでるぞ #{@@test}"
+    end
+    def get_test
+      @@test
     end
   end
 end
 Bird.fly
 Bird2.fly
+puts Bird2.get_test
 
+b = Bird.new
+b.class.fly
+
+p String.private_methods
+
+p private.class
+p Module.private_methods
+p Class.ancestors
+
+class Animal 
+  NAME ='ANIMAL'
+  def say
+    puts 'hoge'
+  end
+
+  def hello
+    puts 'hello'
+  end
+end
+
+class  Dog4 < Animal
+  def say
+    super
+    hello
+    puts 'fuga'
+  end
+end
+
+dog4 = Dog4.new
+dog4.say
+p Dog4::NAME
+
+#class String
+#  def +(value)
+#     value + "hoge"
+#  end
+#end
+#"test"+"test2"
+#
