@@ -30,6 +30,8 @@ def greet2(name, *messages)
   messages.each do |m|
     puts m
   end
+  p "=" * 5
+  p messages.class
 end
 
 greet2('nakamura', 'hoge', 'fuga', 'ooo')

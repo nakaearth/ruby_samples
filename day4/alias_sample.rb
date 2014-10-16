@@ -17,3 +17,18 @@ dog.hoeru
 
 dog.hoeru 'ほげほげ'
 
+
+class Cat
+  def message() "meow" end
+end
+ 
+class Cat
+  alias_method :orig_message, :message
+  def message
+    orig_message + orig_message
+  end
+end
+ 
+cat = Cat.new
+puts cat.message
+
